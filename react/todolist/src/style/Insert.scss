@@ -1,0 +1,34 @@
+@import "./utils.scss";
+
+.Insert {
+  display: flex;
+
+  input {
+    @include resetInput;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: black;
+
+    &::placeholder {
+      color: #dbdbdb;
+    }
+
+    flex: 1;
+  }
+
+  button {
+    @include resetInput;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    @include MidSort;
+    cursor: pointer;
+    transition: 0.2s color ease-in;
+    &:hover {
+      color: red;
+    }
+  }
+
+  border-bottom: 1px solid #dee2e6;
+}

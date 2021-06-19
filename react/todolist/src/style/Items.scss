@@ -1,0 +1,50 @@
+@import "./utils.scss";
+
+.Items {
+  @include MidRowSort;
+  padding: 1rem 0;
+  cursor: pointer;
+
+  .checkbox {
+    @include MidRowSort;
+    flex: 1;
+
+    svg {
+      font-size: 1.5rem;
+      padding-left: 1rem;
+    }
+
+    .text {
+      margin-left: 0.5rem;
+      flex: 1;
+    }
+
+    //ckecked
+    &.checked {
+      svg {
+        color: #22b8cf;
+      }
+      .text {
+        color: #adb5bd;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .remove {
+    @include resetInput;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    @include MidSort;
+    cursor: pointer;
+    transition: 0.2s color ease-in;
+    &:hover {
+      color: red;
+    }
+  }
+
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}

@@ -1,27 +1,58 @@
-$red: #fa5252;
-$oreange: #fd7e14;
-$yellow: #fcc419;
-$green: #40c057;
-$blue: #339af0;
-$indigo: #5c7cfa;
-$violet: #7950f2;
-
-@mixin square($size) {
-  $calculated: 32px * $size;
-  width: $calculated;
-  height: $calculated;
-}
+@import "./utils.scss";
 
 .SassComponent {
   display: flex;
+  justify-content: center;
+  background: $oc-gray-2;
+
+  @include media("<768px") {
+    background: $oc-gray-9;
+    transition: all 0.3s ease-in;
+  }
+
   .box {
     background: red;
     cursor: pointer;
     transition: all 0.3s ease-in;
 
+    // .red 클래스가 .box와 함께 쓰였을 때
     &.red {
       background-color: $red;
       @include square(1);
+    }
+
+    &.orange {
+      background-color: $orange;
+      @include square(2);
+    }
+
+    &.yellow {
+      background-color: $yellow;
+      @include square(3);
+    }
+
+    &.green {
+      background-color: $green;
+      @include square(4);
+    }
+
+    &.blue {
+      background-color: $blue;
+      @include square(5);
+    }
+
+    &.indigo {
+      background-color: $indigo;
+      @include square(6);
+    }
+
+    &.violet {
+      background-color: $violet;
+      @include square(7);
+    }
+
+    &:hover {
+      background: black;
     }
   }
 }

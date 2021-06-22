@@ -12,7 +12,7 @@ toDoList, search 등 - VanilaJs, React
 
 > ToDoList
 
-<img src="./react/todolist/image/React_Todolist.png"></img>
+<img src="./react/todolist/image/ToDoListGif.gif"></img>
 
 등록, 삭제, 완료 토글 버튼을 React hook을 사용해 구현
 

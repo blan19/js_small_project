@@ -1,0 +1,10 @@
+@mixin MidSort {
+  display: flex;
+  align-items: center;
+}
+
+@mixin MidColSort {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

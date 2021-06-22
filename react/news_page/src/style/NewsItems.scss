@@ -1,0 +1,38 @@
+.NewsItems {
+  display: flex;
+
+  .thumbnail {
+    background: black;
+
+    img {
+      display: block;
+      width: 160px;
+      height: 160px;
+      // 이미지 스케일
+      object-fit: cover;
+    }
+  }
+
+  .contents {
+    margin-left: 1rem;
+
+    h2 {
+      margin: 0;
+      a {
+        color: black;
+      }
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+      // 공백 처리
+      white-space: normal;
+    }
+  }
+
+  & + & {
+    margin-top: 3rem;
+  }
+}

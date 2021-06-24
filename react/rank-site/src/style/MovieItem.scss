@@ -1,0 +1,26 @@
+.RankItem {
+  display: flex;
+  align-items: center;
+
+  .rank {
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  .OldAndNew {
+    margin-left: 1rem;
+    color: red;
+    font-weight: bold;
+    font-size: x-small;
+  }
+
+  .name {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  & + & {
+    border-top: 1px solid black;
+  }
+}

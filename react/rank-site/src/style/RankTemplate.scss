@@ -1,0 +1,21 @@
+.RankTemplate {
+  width: 514px;
+  background: lightgreen;
+
+  margin-top: 1rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  .title {
+    font-weight: bold;
+    font-size: x-large;
+    border-bottom: 1px solid black;
+    text-align: center;
+    color: white;
+
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 373px;
+  }
+}

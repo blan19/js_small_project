@@ -91,8 +91,8 @@ export default function score(state = initialState, action) {
 		case RESET:
 			return {
 				...state,
-				page: 0,
 				score: 0,
+        page: 0,
 			};
 		default:
 			return state;

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import IntroPage from './pages/IntroPage';
 
 const QuizeTemplate = styled.div`
-	background: #fafafa;
 	width: 768px;
 	margin: 0 auto;
 

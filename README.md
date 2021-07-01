@@ -32,4 +32,6 @@ React-Router를 사용하여 수정할 예정
 
 <img src="./images/quize_2.gif"></img>
 
+사용한 패키지
+
 <img src="./images/package_1.png"></img>

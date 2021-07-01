@@ -23,3 +23,13 @@ toDoList, search 등 - VanilaJs, React
 axios를 사용하여 News API를 받아와 카테고리 별로 보여주었다
 
 React-Router를 사용하여 수정할 예정
+
+> Soccer Player Quize Site
+
+사진에 보이는 축구 선수의 이름을 맞춰서 얻은 Score를 확인해보자!
+
+<img src="./images/quize_1.gif"></img>
+
+<img src="./images/quize_2.gif"></img>
+
+<img src="./images/package_1.png"></img>
